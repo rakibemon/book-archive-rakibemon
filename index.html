@@ -2,37 +2,40 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Book-archive-rakibemon</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Book-archive-rakibemon</title>
 </head>
 
 <body>
-   <main>
-      <!-- Search Box -->
+  <main>
+    <!-- Search Box -->
     <div class="d-flex justify-content-center">
-      <blockquote class="text-center mt-4 quote">
+      <blockquote class="text-center mt-2 quote">
+        <i class="bi bi-book-half" style="font-size: 100px;"></i>
         <p class="quote-text">A room without books is like a body without a soul</p>
         <p class="quote-author"> Marcus Tullius Cicero </p>
       </blockquote>
     </div>
     <div class="input-group mt-5 mb-3 w-50 mx-auto">
-        <input id="input-text" type="text" class="form-control" placeholder="Enter Book's name"
-            aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+      <input id="input-text" type="text" class="form-control rounded" placeholder="Enter Book's name"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-success" type="button" id="search-button">Search</button>
     </div>
     <!-- spinner -->
     <div class="d-flex justify-content-center d-none" id="spinner">
-        <div class="spinner-border" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
+    </div>
     <!-- empty error -->
     <div id="empty-error"></div>
     <!-- error message -->
@@ -41,12 +44,12 @@
     <div id="books-counter"></div>
     <!-- show books -->
     <div class="row row-cols-1 row-cols-md-3 container mx-auto g-5" id="books-container">
-      </div>
-   </main>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    </div>
+  </main>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

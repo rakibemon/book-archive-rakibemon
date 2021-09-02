@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+    background-color:rgb(186, 221, 179);
 }
 *{
     box-sizing: border-box;
@@ -10,15 +11,13 @@ body{
     max-width: 600px;
     margin: 10px 30px;
     padding: 25px;
-    background-color: #f8fffe;
-    border: 1px solid #b0d2cb;
     color: #0b4237;
-    border-left-width: 10px;
 }
-quote-text{
+.quote-text{
     font-family: 'Gelasio', serif;
     font-style: italic;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    font-weight: 00;
     line-height: 1.5;
     margin: 0;
 }
@@ -53,7 +52,13 @@ quote-text{
     color: #fff;
 }
 #books-container img{
-    height: 300px;
+    height:350px;
     margin: auto;
-    object-fit: cover;
+    transition: transform 0.5s linear;
+}
+#books-container figure{
+    overflow: hidden;
+}
+#books-container img:hover{
+    transform: scale(1.05);
 }
