@@ -1,0 +1,17 @@
+#empty-error{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.empty-error{
+    background-color: rgb(175, 22, 22);
+    padding: 10px 80px;
+    text-align: center;
+    width: 50%;
+    color: #fff;
+}
+#books-container img{
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+}
