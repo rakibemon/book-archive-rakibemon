@@ -34,13 +34,13 @@ const displayBook = (books) => {
    else{
     books.forEach(book => {
         document.getElementById("error-message").classList.add('d-none')
-        const { cover_i, title, author_name, first_publish_year, publisher } = book;
-        console.log(book)
+        const { cover_i, title, author_name, first_publish_year, publisher} = book;
+        console.log(books)
         const div = document.createElement('div')
         div.classList.add('col');
         div.innerHTML = `
         <div class="card h-100">
-    <img src="https://covers.openlibrary.org/b/id/${cover_i}-M.jpg" class="card-img-top text-center" alt="Book Image">
+    <img src="https://covers.openlibrary.org/b/id/${cover_i}-M.jpg" class="card-img-top text-center img-thumbnail" alt="Book Image">
     <div class="card-body">
       <h5 class="card-title">${title}</h5>
       <p> <b>Author Name :</b> ${author_name}</p>

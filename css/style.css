@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.quote{
+    max-width: 600px;
+    margin: 10px 30px;
+    padding: 25px;
+    background-color: #f8fffe;
+    border: 1px solid #b0d2cb;
+    color: #0b4237;
+    border-left-width: 10px;
+}
+quote-text{
+    font-family: 'Gelasio', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.quote-text::before{
+    content: open-quote;
+    font-size: 40px;
+    color:#009578
+}
+.quote-text::after{
+    content: close-quote;
+    font-size: 40px;
+    color:#009578
+}
+.quote-author{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+.quote-author::before{
+    content: "\2014\0020";
+}
 #empty-error{
     display: flex;
     justify-content: center;
